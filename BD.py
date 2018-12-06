@@ -5,6 +5,7 @@ class BD():
     _db = None
     def __init__(self):
         self._db = postgresql.open("pq://seu_usuario:sua_senha@localhost/infoinvest")
+		#acesso ao bd local
 
     def manipular(self,sql):
         try:
